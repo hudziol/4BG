@@ -23,4 +23,7 @@ $(document).ready(() => {
         //$("#offer-box").slideToggle(300);
         $(this).hide(300);
     });
+    $(".btn-close").click(function(){
+        $(this).parent().fadeOut(300);
+    });
 });
