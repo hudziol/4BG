@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>jQuery</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -19,15 +19,27 @@
 
 <body>
     <header>
-    </header>
-    <main>
         <div class="container-fluid bg-primary text-center text-light py-5 mb-4">
             <h1>Eksploracja jQuery</h1>
             <p>Aplikacja testowa jQuery</p>
         </div>
-        <div class="container">
+    </header>
+    <main class="container">
+        <div class="my-5">
             <h2>Hello</h2>
             <button type="button" class="btn btn-primary" id="btn-hello">Hello</button>
+        </div>
+        <div class="my-5">
+            <button type="button" class="btn btn-primary" id="btn-show">Pokaż oferte</button>
+            <button type="button" class="btn btn-primary" id="btn-hide">Ukryj oferte</button>
+            <button type="button" class="btn btn-primary" id="btn-toggle">Pokaż/Ukryj oferte</button>
+        </div>
+        <div class="alert alert-info" id="offer-box">
+            <ul>
+                <li>Usługi informatyczne</li>
+                <li>Projekty graficzne</li>
+                <li>Montaż sieci</li>
+            </ul>
         </div>
     </main>
     <footer>
