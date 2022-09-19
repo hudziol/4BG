@@ -4,12 +4,23 @@ $(document).ready(() => {
     });
 
     $("#btn-show").click(() => {
-        $("#offer-box").show();
+        //$("#offer-box").show(300);
+        //$("#offer-box").slideDown(300);
+        $("#offer-box").fadeIn(300);
     });
     $("#btn-hide").click(() => {
-        $("#offer-box").hide();
+        //$("#offer-box").hide(300);
+        //$("#offer-box").slideUp(300);
+        $("#offer-box").fadeOut(300);
     });
     $("#btn-toggle").click(() => {
-        $("#offer-box").toggle();
+        //$("#offer-box").toggle(300);
+        //$("#offer-box").slideToggle(300);
+        $("#offer-box").fadeToggle(300);
+    });
+    $(".prize").click(function() {
+        //$("#offer-box").toggle(300);
+        //$("#offer-box").slideToggle(300);
+        $(this).hide(300);
     });
 });
