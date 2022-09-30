@@ -20,30 +20,26 @@ $(document).ready(() => {
     });
 
     $('input:radio[name=radio1]').change(function(){
-        /*$("#blok").removeClass("text-primary");
-        $("#blok").removeClass("text-secondary");
-        $("#blok").removeClass("text-info");
-        $("#blok").removeClass("text-success");
-        $("#blok").removeClass("text-warning");
-        $("#blok").removeClass("text-danger");
-        $("#blok").removeClass("text-dark");*/
-        for(i in document.getElementsByName('radio1'))
-        {
-            console.log(i);
-            $("#blok").removeClass("text-" + $(i).attr("data-class"));
-        }
+        radio1F();
         $("#blok").addClass("text-" + $(this).attr("data-class"));
     });
     
     $('input:radio[name=radio2]').change(function(){
-        $("#blok").removeClass("bg-primary");
-        $("#blok").removeClass("bg-secondary");
-        $("#blok").removeClass("bg-info");
-        $("#blok").removeClass("bg-success");
-        $("#blok").removeClass("bg-warning");
-        $("#blok").removeClass("bg-danger");
-        $("#blok").removeClass("bg-dark");
-        $("#blok").removeClass("bg-light");
+        radio2F();
         $("#blok").addClass("bg-" + $(this).attr("data-class"));
     });
 });
+
+function radio1F()
+{
+    $("input[name='radio1']").each(function(){
+        $("#blok").removeClass("text-" + $(this).attr("data-class"));
+    });
+}
+
+function radio2F()
+{
+    $("input[name='radio2']").each(function(){
+        $("#blok").removeClass("bg-" + $(this).attr("data-class"));
+    });
+}
