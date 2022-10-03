@@ -21,25 +21,25 @@ $(document).ready(() => {
 
     $('input:radio[name=radio1]').change(function(){
         radio1F();
-        $("#blok").addClass("text-" + $(this).attr("data-class"));
+        $("#blok").addClass("bg-" + $(this).attr("data-class"));
     });
     
     $('input:radio[name=radio2]').change(function(){
         radio2F();
-        $("#blok").addClass("bg-" + $(this).attr("data-class"));
+        $("#blok").addClass("text-" + $(this).attr("data-class"));
     });
 });
 
 function radio1F()
 {
     $("input[name='radio1']").each(function(){
-        $("#blok").removeClass("text-" + $(this).attr("data-class"));
+        $("#blok").removeClass("bg-" + $(this).attr("data-class"));
     });
 }
 
 function radio2F()
 {
     $("input[name='radio2']").each(function(){
-        $("#blok").removeClass("bg-" + $(this).attr("data-class"));
+        $("#blok").removeClass("text-" + $(this).attr("data-class"));
     });
 }
