@@ -15,6 +15,7 @@ export class AppComponent {
   highlight: string = "yellow";
   isError: boolean = false;
   img: string = "https://tuitam.org.pl/wp-content/uploads/2020/02/DSC_8540.jpg";
+  emoji: string = "🌚";
 
   sayHello()
   {
@@ -37,5 +38,17 @@ export class AppComponent {
   switchImg(a: string)
   {
     this.img = a;
+  }
+
+  kwadrat(a: boolean)
+  {
+    if(a)
+    {
+      this.emoji = "🌝";
+    }
+    else
+    {
+      this.emoji = "🌚";
+    }
   }
 }
